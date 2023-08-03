@@ -83,7 +83,10 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "endpoint", nargs=1, default="127.0.0.1:8157", help="Endpoint to proxy to"
+        "endpoint",
+        nargs=1,
+        default="127.0.0.1:8157",
+        help="Opensearch endpoint to proxy to",
     )
     parser.add_argument(
         "--region", "-r", required=False, default="us-east-1", help="AWS region to use"
